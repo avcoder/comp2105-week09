@@ -1,0 +1,1369 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>WebSlides: Making HTML presentations easy</title>
+  <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
+
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="././static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="./static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <meta property="og:url" content="http://your-url.com/">
+  <!-- YOUR URL -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WebSlides — Making HTML Presentations Easy">
+  <!-- EDIT -->
+  <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma.">
+  <!-- EDIT -->
+  <meta property="og:updated_time" content="2017-01-04T17:20:50">
+  <!-- EDIT -->
+  <meta property="og:image" content="./static/images/share-webslides.jpg">
+  <!-- EDIT -->
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@webslides">
+  <!-- EDIT -->
+  <meta name="twitter:creator" content="@jlantunez">
+  <!-- EDIT -->
+  <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy">
+  <!-- EDIT -->
+  <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">
+  <!-- EDIT -->
+  <meta name="twitter:image" content="./static/images/share-webslides.jpg">
+  <!-- EDIT -->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="./static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="./static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="./static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="./static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="./static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="./static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+  <style>
+    input[type=range] {
+      -webkit-appearance: none;
+      background: #333;
+      border: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 16px;
+      width: 120px;
+      background: lime;
+      margin-top: -4px;
+    }
+
+    input[type=range]::-moz-range-thumb {
+      border: none;
+      height: 16px;
+      width: 120px;
+      background: lime;
+      margin-top: -4px;
+      border-radius: 0;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo">
+        <a href="index.html" title="WebSlides">WebSlides</a>
+      </p>
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://github.com/avcoder/comp2105-week09" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>WebSlides</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@WebSlides</em>
+          </a>
+        </li>
+        <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="horizontal">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+
+      <section>
+        <!-- Credit: image from unsplash.com -->
+        <span class="background" style="background-image:url('././static/images/splash.jpg'); filter: opacity(.3);"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1>
+            <strong>Greensock Part 2</strong>
+          </h1>
+          <p class="text-intro">Week 9
+            <br/>COMP 2105
+
+          </p>
+          <p>
+            <a href="https://github.com/avcoder/comp2105-week09" class="button zoomIn" title="Download WebSlides for free">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              Class Notes
+            </a>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>To Do Today:</strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>
+                  position parameter
+                </h2>
+                <p></p>
+              </li>
+              <li>
+                <h2>SVG anatomy</h2>
+                <p></p>
+              </li>
+              <li>
+                <h2>MorphSVG</h2>
+                <p>Learn one of the most popular plugins of GSAP</p>
+              </li>
+
+
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+
+        <h3 class="aligncenter">Question: What do you think of the new Web Animation API and its handling of timelines?</h3>
+        <br>
+        <br>
+        <br>
+
+        <div class="wrap">
+
+          <blockquote class="text-quote">
+            <p> I think it's good, but I still think that it's not as complex as Greensock's. It's a step in the right direction,
+              but there's also some things like eases, bounces, seeks, workflow boons that it doesn't include. Until it does,
+              it's still not as good.</p>
+            <p>
+              <cite>
+                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/1099384716170452992/Z_2ELEQp_400x400.jpg" alt="Avatar">Sarah Drasner.
+                <br/>
+                <a href="https://www.lynda.com/MyPlaylist/Watch/15095804/621334?autoplay=true">Advanced SVG Animation</a>
+              </cite>
+            </p>
+          </blockquote>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green1" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue1" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange1" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+              </div>
+              <button id="go1">Run</button>
+              <input type="range">
+              <input type="range">
+              <input type="range">
+              <script>
+                $(document).ready(function () {
+                  $('#go1').click(function () {
+                    const tl1 = new TimelineMax();
+                    tl1.to("#green1", 1, { x: 600 }).to("#blue1", 1, { x: 600 }).to("#orange1", 1, { x: 600 });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                GSAP Review
+              </h3>
+              <pre><code><h4>
+const tl1 = new TimelineMax();
+
+tl1.to("#green", 1, {x: 600})
+   .to("#blue", 1, {x: 600})
+   .to("#orange", 1, {x: 600});
+</h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter size-70">
+          <h2>Introducing the
+            <code>position</code> parameter
+          </h2>
+          <br/>
+          <p class="text-intro">The secret to building sequences with precise timing is via the
+            <code>position</code> parameter which controls the placement of your tweens, labels, callbacks, pauses, and even nested timelines,
+            so you'll be able to place anything anywhere.</p>
+          <pre><code><h3 class="aligncenter">.to( target, duration, vars, position )</h3></code></pre>
+          <p>For example, what if you want them to overlap, or start at the same time, or have a gap between them?</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green2" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue2" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange2" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+              </div>
+              <button id="go2">Run</button>
+              <input type="range">
+              <input type="range">
+              <input type="range">
+              <script>
+                $(document).ready(function () {
+                  $('#go2').click(function () {
+                    const tl2 = new TimelineMax();
+                    tl2
+                      .to("#green2", 1, { x: 600 })
+                      .to("#blue2", 1, { x: 600 }, "+=1")
+                      .to("#orange2", 1, { x: 600 }, "+=2");
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Use
+                <code>position</code> to allow for gaps ("+=1")
+              </h3>
+              <pre><code><h4>
+tl2.to("#green", 1, {x: 600})
+    .to("#blue", 1, {x: 600}, "+=1")
+    .to("#orange", 1, {x: 600}, "+=2");
+  </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green3" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue3" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange3" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+              </div>
+              <button id="go3">Run</button>
+              <input type="range">
+              <input type="range">
+              <input type="range">
+              <script>
+                $(document).ready(function () {
+                  $('#go3').click(function () {
+                    const tl3 = new TimelineMax();
+                    tl3
+                      .to("#green3", 1, { x: 600 })
+                      .to("#blue3", 1, { x: 600 }, "-=.5")
+                      .to("#orange3", 1, { x: 600 }, "-=.5");
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Use
+                <code>position</code> to allow for overlaps ("-=1")
+              </h3>
+              <pre><code><h4>
+tl3.to("#green", 1, {x: 600})
+   .to("#blue", 1, {x: 600}, "-=.5")
+   .to("#orange", 1, {x: 600}, "-=.5");
+    </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green4" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue4" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange4" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+              </div>
+              <button id="go4">Run</button>
+              <input type="range">
+              <input type="range">
+              <input type="range">
+              <script>
+                $(document).ready(function () {
+                  $('#go4').click(function () {
+                    const tl4 = new TimelineMax();
+                    tl4
+                      .to("#green4", 1, { x: 600 })
+                      .to("#blue4", 1, { x: 600 }, "2")
+                      .to("#orange4", 1, { x: 600 }, "2.5");
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Use
+                <code>position</code> as an absolute value to specify the exact time in seconds when a tween should start
+              </h3>
+              <pre><code><h4>
+  tl4.to("#green", 1, {x: 600})
+     .to("#blue", 1, {x: 600}, "2")
+     .to("#orange", 1, {x: 600}, "2.5");
+      </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green5" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue5" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange5" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+              </div>
+              <button id="go5">Run</button>
+              <input type="range">
+              <input type="range">
+              <input type="range">
+              <script>
+                $(document).ready(function () {
+                  $('#go5').click(function () {
+                    const tl5 = new TimelineMax();
+                    tl5
+                      .to("#green5", 1, { x: 600 }, "myLabel")
+                      .to("#blue5", 1, { x: 600 })
+                      .to("#orange5", 1, { x: 600 }, "myLabel+=0.5");
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Use
+                <code>position</code> to set a label or to specify where a teen should be placed
+              </h3>
+              <pre><code><h5>
+  const tl5 = new TimelineMax();
+  
+  tl5.to("#green", 1, { x: 600 }, "myLabel")
+     .to("#blue", 1, { x: 600 })
+     .to("#orange", 1, { x: 600 }, "myLabel+=0.5");
+  </h5></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="bvEWmr" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="Challenge: Position - Start" data-preview="true" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/bvEWmr/">Challenge: Position - Start</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                GSAP's position property
+              </h3>
+              <p class="text-intro">Fix this animation so that:
+              </p>
+              <ul class="flexblock activity">
+                <li class="text-intro">Man should start animating 1 second before car animation ends</li>
+                <li class="text-intro">One second after man animation ends both car and lift should go up simultaneously</li>
+              </ul>
+              <br>
+              <p class="text-intro">See answer in
+                <a href="http://greensock.com/wp-content/uploads/custom/position-challenge/position-challenge.gif">.gif</a> format
+              </p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green1" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+              </div>
+              <button id="go1">Run</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go1').click(function () {
+                    const tl1 = new TimelineMax();
+                    tl1.fromTo("#green1", 1, { x: 500 }, { x: 200 });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                .fromTo()
+              </h3>
+              <pre><code><h4>
+  const tl1 = new TimelineMax();
+  
+  tl1.fromTo("#green", 1, 
+    {x: 500}, {x: 200});
+  </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green2" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue2" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange2" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+              </div>
+              <button id="go2">Run Normal</button>
+              <button id="go2b">Run 2x speed</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go2').click(function () {
+                    const tl2 = new TimelineMax();
+                    tl2.to("#green2", 1, { x: 600 }).to("#blue2", 1, { x: 600 }).to("#orange2", 1, { x: 600 });
+                  });
+
+                  $('#go2b').click(function () {
+                    const tl2b = new TimelineMax();
+                    tl2b.to("#green2", 1, { x: 600 }).to("#blue2", 1, { x: 600 }).to("#orange2", 1, { x: 600 })
+                    tl2b.timeScale(2);
+                  });
+                });
+
+
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                .timeScale()
+              </h3>
+              <p class="text-intro">Factor that's used to scale time in the animation where 1 = normal speed (the default), 0.5 = half speed, 2
+                = double speed, etc</p>
+              <pre><code><h4>
+tl
+.to("#green", 1, { x: 600 })
+.to("#blue", 1, { x: 600 })
+.to("#orange", 1, { x: 600 })
+
+tl.timeScale(2);
+    </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green3" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+              </div>
+              <button id="go3">Repeat 0</button>
+              <button id="go3b">Repeat 1</button>
+              <button id="go3c">Repeat 2</button>
+              <button id="go3d">Repeat -1</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go3').click(function () {
+                    const tl3 = new TimelineMax();
+                    tl3.to("#green3", 1, { x: 600, yoyo: true, repeat: 0 });
+                  });
+                  $('#go3b').click(function () {
+                    const tl3 = new TimelineMax();
+                    tl3.to("#green3", 1, { x: 600, yoyo: true, repeat: 1 });
+                  });
+                  $('#go3c').click(function () {
+                    const tl3 = new TimelineMax();
+                    tl3.to("#green3", 1, { x: 600, yoyo: true, repeat: 2 });
+                  });
+                  $('#go3d').click(function () {
+                    const tl3 = new TimelineMax();
+                    tl3.to("#green3", 1, { x: 600, yoyo: true, repeat: -1 });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                yoyo | repeat
+              </h3>
+              <p class="text-intro">yoyo is a boolean value, where true causes the tween to go back and forth, alternating backward and forward
+                on each repeat. yoyo works in conjunction with repeat, where repeat controls how many times the tween repeats,
+                and yoyo controls whether or not each repeat alternates direction</p>
+              <pre><code><h4>
+tl.to("#green", 1, { x:600, 
+  yoyo: true, repeat: 2 });
+    </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green4" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+              </div>
+              <button id="go4">Run</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go4').click(function () {
+                    const tl4 = new TimelineMax({ yoyo: true, repeat: -1 });
+                    tl4.to("#green4", 1, { x: 600 });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Passing options when constructing
+                <br> new TimelineMax({vars})
+              </h3>
+              <p class="text-intro">The vars parameter allows you to configure a TimelineMax with a
+                <a href="https://greensock.com/docs/TimelineMax/TimelineMax()">variety of options</a>
+              </p>
+              <pre><code><h4>
+const tl = new TimelineMax(
+  { yoyo: true, repeat: -1 });
+
+tl.to("#green", 1, { x: 600 });
+      </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green5" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+              </div>
+              <button id="go5">Run</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go5').click(function () {
+                    const tl5 = new TimelineMax({ yoyo: true, repeat: -1, repeatDelay: 1 });
+                    tl5.to("#green5", 1, { x: 600 });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                repeatDelay:
+              </h3>
+              <p class="text-intro">Gets or sets the amount of time in seconds (or frames for frames-based tweens) between repeats.
+              </p>
+              <pre><code><h4>
+const tl = new TimelineMax(
+  { yoyo: true, repeat: -1, repeatDelay: 1 });
+
+tl.to("#green", 1, { x: 600 });
+        </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green7" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+              </div>
+              <button id="go7">Play</button>
+              <button id="go7b">Pause</button>
+              <script>
+                $(document).ready(function () {
+                  const tl7 = new TimelineMax({ yoyo: true, repeat: -1, paused: true });
+                  tl7.to("#green7", 1, { x: 600 });
+                  $('#go7').click(function () {
+                    tl7.play();
+                  });
+                  $('#go7b').click(function () {
+                    tl7.pause();
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                .play() | .pause()
+              </h3>
+              <pre><code><h4>
+const tl = new TimelineMax({ yoyo: true, repeat: -1, paused: true });
+tl.to("#green", 1, { x: 600 });
+
+$('#playButton').click(function () {
+  tl.play();
+});
+
+$('#pauseButton').click(function () {
+  tl.pause();
+});
+          </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <div id="green8" style="height: 100px; width: 100px; background: green; margin: 10px; color: #fff">autoAlpha</div>
+                <div id="green8b" style="height: 100px; width: 100px; background: green; margin: 10px; color: #fff">opacity</div>
+              </div>
+              <button id="go8">Run</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go8').click(function () {
+                    const tl8 = new TimelineMax();
+                    tl8.to("#green8", 1, { autoAlpha: 0 }).to("#green8b", 1, { opacity: 0 });
+                  });
+                  $('#green8').click(function () {
+                    alert('clicked autoalpha');
+                  });
+                  $('#green8b').click(function () {
+                    alert('clicked opacity');
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                autoAlpha
+              </h3>
+              <p class="text-intro">Identical to opacity except that when the value hits 0 the visibility property will be set to "hidden" in order
+                to improve browser rendering performance and prevent clicks/interactivity on the target. When the value is
+                anything other than 0, visibility will be set to "inherit". It is not set to "visible" in order to honor
+                inheritance
+              </p>
+              <pre><code><h4>
+tl
+  .to("#green", 1, { autoAlpha: 0 })
+  .to("#green2", 1, { opacity: 0 });
+          </h4></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px">
+                <svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150">
+                  <rect id="green9" x="0" y="0" fill="green" stroke="black" width="150" height="150" />
+                </svg>
+
+              </div>
+              <button id="go9">Run</button>
+              <script>
+                $(document).ready(function () {
+                  $('#go9').click(function () {
+                    TweenMax.to("#green9", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease: Linear.easeNone });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                attr: {}
+              </h3>
+              <p class="text-intro">Tweens any numeric attribute of a DOM element. For example, let's say your DOM element looks like this:
+              </p>
+              <pre><code><h5>
+&lt;rect id="green" x="0" y="0" fill="green" stroke="black" width="150" height="150" /&gt;
+
+TweenMax.to("#green", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease: Linear.easeNone });
+            </h5></code></pre>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter size-70">
+          <h2>Introducing
+            <code>morphSVG</code> plugin
+          </h2>
+          <br/>
+          <p class="text-intro">One of the most exciting features of GreenSock is MorphSVG. It can even mutate shapes with uneven path points beautifully.</p>
+          </p>
+          <pre><code><h3 class="aligncenter">TweenMax.to("#pathFrom", 1, {morphSVG:"#pathTo"});
+          </h3></code></pre>
+          <p class="text-intro">To morph an SVG path to another, all you need to do is point from one ID to another --
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="OPqpRJ" data-default-tab="result" data-user="GreenSock" data-embed-version="2"
+                data-pen-title="Try Club GreenSock Bonus Plugins FREE on Codepen" class="codepen">See the Pen
+                <a href="https://codepen.io/GreenSock/pen/OPqpRJ/">Try Club GreenSock Bonus Plugins FREE on Codepen</a> by GreenSock (
+                <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>
+                Main Principle: Design everything first, unveil slowly.
+              </h4>
+              <p>Did you know? - Greensock's plugins are FREE within codepen</p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-blue">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>Intro to
+              <code>{ morphSVG: "#" }</code>
+            </strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>
+                  Create a new codepen
+                </h2>
+                <p class="text-intro">Include both Greensock library and morphSVG plugin</p>
+              </li>
+              <li>
+                <h2>Grab 2 svg icons</h2>
+                <p class="text-intro">Get the svg code for
+                  <a href="https://github.com/edent/SuperTinyIcons/tree/master/images/svg">amazon.svg</a>, click "Raw", then copy/paste the svg code into codepen. Do the same for apple.svg
+                </p>
+              </li>
+              <li>
+                <h2>Make an id name for each
+                  <code>&lt;path&gt;</code> </h2>
+                <p class="text-intro">For example:
+                  <code>&lt;path id="amazon" ...</code>
+                </p>
+              </li>
+              <li>
+                <h2>Write the code</h2>
+                <p class="text-intro">
+                  <code>TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section class="bg-blue">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <div class="bg-white shadow">
+            <ol class="flexblock specs">
+              <li>
+                <h2>
+                  Let's add a 1.5 second delay
+                </h2>
+                <p class="text-intro">In your list of properties, add
+                  <code>{ ... , delay: 1.5}</code>
+                </p>
+              </li>
+              <li>
+                <h2>Hide the 2nd svg</h2>
+                <p>create an id for the apple svg, then hide it in CSS section</p>
+              </li>
+              <li>
+                <h2>Make an id name for each
+                  <code>&lt;path&gt;</code> </h2>
+                <p class="text-intro">For example:
+                  <code>&lt;path id="amazon" ...</code>
+                </p>
+              </li>
+              <li>
+                <h2>Write the code</h2>
+                <p class="text-intro">
+                  <code>TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code>
+                </p>
+              </li>
+            </ol>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-secondary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 frame">
+          <h2 class="text-serif aligncenter">
+            Submit Online Exercise + Break
+            <br /> (5 mins) + (15mins)
+          </h2>
+          <p class="aligncenter">
+            <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
+          </p>
+          <p class="text-symbols">* * *</p>
+          <h4>More Stuff</h4>
+
+          <ul>
+            <li>
+              <a href="https://twitter.com/Junaidanwar3/status/976463201364783104">Chrome DevTools tip</a>
+            </li>
+            <li>
+              <a href="https://icons8.com/lunacy">Lunacy - Sketch for Windows</a>
+            </li>
+            <li>
+              <a href="https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/">https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="WzOeoX" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="viewbox" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/WzOeoX/">viewbox</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h1>
+                Matching Dimensions
+              </h1>
+              <pre><code><h3>
+&lt;svg width="115" height="190" viewBox="0 0 115 190"&gt;</h3></code></pre>
+              <p>Within this first example the viewport and viewBox are set to matching values, with a width of 115px and a
+                height of 190px. The viewBox is set to cover the entire pear image, and that image is set to fill the bounds
+                of its container.</p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="oqwvMx" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="reduced viewbox" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/oqwvMx/">reduced viewbox</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h1>
+                Reduced viewBox
+              </h1>
+              <pre><code><h3>
+&lt;svg width="115" height="190" viewBox="0 0 65 140"&gt;</h3></code></pre>
+              <p>If we were to take 50px off the width and height of the pear image viewBox, we are reducing the size of what
+                portion of the pear we want visible, but then what is left visible will scale to fit to the bounds of the
+                viewport.
+              </p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-blue">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1>Viewbox</h1>
+          <img src="./static/images/viewboxtool.png" alt="viewbox tool by sarasoueidan.com" style="margin-right: 40px;">
+          <!-- .end .bg-white shadow -->
+          <p class="text-intro">
+            <a href="http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html">http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html</a>
+          </p>
+        </div>
+
+
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="zWzxvE" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="expanded viewport" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/zWzxvE/">expanded viewport</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h1>
+                Expanding viewPort
+              </h1>
+              <pre><code><h3>
+&lt;svg width="315" height="390" viewBox="0 0 115 190"&gt;</h3></code></pre>
+              <p>Starting from our original example, let's add an additional 200px to both the width and height of the viewport.
+                The image will scale up to match these dimensions. The viewBox is set to cover the entire image, making the
+                whole pear visible. The viewport contains this whole image and defines the bounds to which the whole pear
+                will fill.
+              </p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="LdLEbB" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="altering min values" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/LdLEbB/">altering min values</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h1>
+                Altering min values
+              </h1>
+              <pre><code><h3>
+&lt;svg width="315" height="390" viewBox="50 30 115 190"&gt;</h3></code></pre>
+              <p>The min values within the viewBox define the origin of the viewBox within the parent element; in other words,
+                at what point within the viewBox do we want it to begin matching up the viewport. In the above examples the
+                min values are set to 0,0 (top left). Let's change these to 50, 30. The viewBox (what will be visible) now
+                starts 50px in from the x axis and 30px in from the y axis. In altering these values we have simply changed
+                the section of the pear we want to focus on.
+              </p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-blue">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            After export, before implementation:
+          </h2>
+          <h1>Optimize!</h1>
+          <div class="column">
+            <img src="./static/images/svgomg.png" alt="svgomg">
+          </div>
+          <div class="column">
+            <ul class="flexblock metrics">
+              <li class="text-intro">
+                <a href="https://jakearchibald.github.io/svgomg/">SVGOMG &nearr;</a>
+              </li>
+              <li class="text-intro">
+                <a href="http://petercollingridge.appspot.com/svg-optimiser">Peter Collingridge's SVG Editor</a>
+              </li>
+              <li class="text-intro">
+                <a href="https://www.npmjs.com/package/svgo">SVGO</a>
+              </li>
+            </ul>
+            <p>
+              <a href="https://www.sitepoint.com/three-ways-decreasing-svg-file-size-svgo/">https://www.sitepoint.com/three-ways-decreasing-svg-file-size-svgo/</a>
+            </p>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <a href="https://blueprintinteractive.com/blog/creating-svg-download-button-gsap%E2%80%99s-morphsvgplugin">
+                <img src="./static/images/download.gif" alt="download button" style="width: 400px">
+              </a>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Let's make this download button using morphSVG
+              </h3>
+              <p class="text-intro">
+                <a href="https://codepen.io/avcoder/pen/dmRqPe">https://codepen.io/avcoder/pen/dmRqPe</a>
+              </p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>Summary:</strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                We learned a new level of animation using jQuery tools like animate(), 3rd-party easing/timing, and callback functions.We
+                also learned how to trigger other events once an animation is complete, and to stop all animations currently
+                in progress.
+              </li>
+              <li>
+                We applied our basic knowledge of Greensock to create an animated banner ad.
+              </li>
+              <li>
+                Next, we will investigate about SVG**, GSAP's DrawSVG and MorphSVG
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-secondary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 frame">
+          <h2 class="text-serif aligncenter">
+            Do in-class Exercise 13
+            <br/>until end of class
+          </h2>
+          <p class="aligncenter">
+            <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
+          </p>
+          <p class="text-symbols">* * *</p>
+          <h4>More Stuff</h4>
+
+          <ul>
+            <li>
+              <a href="https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2">https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2</a>
+            </li>
+            <li>
+              <a href="https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development">https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development</a>
+            </li>
+            <li>
+              <a href="http://thenewcode.com/858/Web-Development-Reading-List-Accessibility">http://thenewcode.com/858/Web-Development-Reading-List-Accessibility</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <!-- .wrap = container (width: 90%) -->
+        <div class=" wrap ">
+          <h2 class="alignleft ">
+            <strong>References</strong>
+          </h2>
+
+
+        </div>
+        <ol>
+          <li>Advanced SVG Animation with Sarah Drasner http://lynda.com</li>
+          <li>Creating an HTML5 Banner ad with Greensock (GSAP) with Chris Converse</li>
+          <li>https://greensock.com/position-parameter</li>
+          <li>https://www.youtube.com/watch?v=v9GK4Rf6w3A - Intro to HTML5 Animation with Greensock Tutorial</li>
+          <li>https://css-tricks.com/scale-svg/</li>
+          <li>http://jonibologna.com/svg-viewbox-and-viewport/</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+
+        <!-- .end .wrap -->
+      </section>
+
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- A global footer
+
+     <footer role="contentinfo ">
+      <div class="wrap ">
+        <p>An <a href="https://github.com/webslides/webslides ">open source solution</a>, by <a href="https://twitter.com/webslides ">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+  <!-- Required -->
+  <script src="././static/js/webslides.js "></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="././static/js/svg-icons.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js "></script>
+
+</body>
+
+</html>
