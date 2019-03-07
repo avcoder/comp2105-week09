@@ -165,18 +165,18 @@
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
               <li>
-                <h2>
-                  position parameter
-                </h2>
-                <p></p>
-              </li>
-              <li>
                 <h2>SVG anatomy</h2>
-                <p></p>
+                <p>Get more in depth about SVGs</p>
               </li>
               <li>
                 <h2>MorphSVG</h2>
                 <p>Learn one of the most popular plugins of GSAP</p>
+              </li>
+              <li>
+                <h2>
+                  position parameter, and other Greensock options/methods.
+                </h2>
+                <p>Learn Greensock's position parameter and much more</p>
               </li>
 
 
@@ -187,32 +187,370 @@
         <!-- .end .wrap -->
       </section>
 
-      <section class="bg-apple">
-        <!--.wrap = container (width: 90%) -->
 
-        <h3 class="aligncenter">Question: What do you think of the new Web Animation API and its handling of timelines?</h3>
-        <br>
-        <br>
-        <br>
+      <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+  
+              <div class="column">
+                <p data-height="500" data-theme-id="0" data-slug-hash="WzOeoX" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                  data-pen-title="viewbox" class="codepen">See the Pen
+                  <a href="https://codepen.io/avcoder/pen/WzOeoX/">viewbox</a> by A.V. (
+                  <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                  <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h1>
+                  Matching Dimensions
+                </h1>
+                <pre><code><h3>
+  &lt;svg width="115" height="190" viewBox="0 0 115 190"&gt;</h3></code></pre>
+                <p>Within this first example the viewport and viewBox are set to matching values, with a width of 115px and a
+                  height of 190px. The viewBox is set to cover the entire pear image, and that image is set to fill the bounds
+                  of its container.</p>
+  
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+  
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+  
+              <div class="column">
+                <p data-height="500" data-theme-id="0" data-slug-hash="oqwvMx" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                  data-pen-title="reduced viewbox" class="codepen">See the Pen
+                  <a href="https://codepen.io/avcoder/pen/oqwvMx/">reduced viewbox</a> by A.V. (
+                  <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                  <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h1>
+                  Reduced viewBox
+                </h1>
+                <pre><code><h3>
+  &lt;svg width="115" height="190" viewBox="0 0 65 140"&gt;</h3></code></pre>
+                <p>If we were to take 50px off the width and height of the pear image viewBox, we are reducing the size of what
+                  portion of the pear we want visible, but then what is left visible will scale to fit to the bounds of the
+                  viewport.
+                </p>
+  
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+  
+        <section class="bg-blue">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>Viewbox</h1>
+            <a href="http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html">
+            <img src="./static/images/viewboxtool.png" alt="viewbox tool by sarasoueidan.com" style="margin-right: 40px;">
+          </a>
+            <!-- .end .bg-white shadow -->
+          </div>
+  
+  
+          <!-- .end .wrap -->
+        </section>
+  
+  
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+  
+              <div class="column">
+                <p data-height="500" data-theme-id="0" data-slug-hash="zWzxvE" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                  data-pen-title="expanded viewport" class="codepen">See the Pen
+                  <a href="https://codepen.io/avcoder/pen/zWzxvE/">expanded viewport</a> by A.V. (
+                  <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                  <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h1>
+                  Expanding viewPort
+                </h1>
+                <pre><code><h3>
+  &lt;svg width="315" height="390" viewBox="0 0 115 190"&gt;</h3></code></pre>
+                <p>Starting from our original example, let's add an additional 200px to both the width and height of the viewport.
+                  The image will scale up to match these dimensions. The viewBox is set to cover the entire image, making the
+                  whole pear visible. The viewport contains this whole image and defines the bounds to which the whole pear
+                  will fill.
+                </p>
+  
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+  
+  
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+  
+              <div class="column">
+                <p data-height="500" data-theme-id="0" data-slug-hash="LdLEbB" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                  data-pen-title="altering min values" class="codepen">See the Pen
+                  <a href="https://codepen.io/avcoder/pen/LdLEbB/">altering min values</a> by A.V. (
+                  <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                  <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h1>
+                  Altering min values
+                </h1>
+                <pre><code><h3>
+  &lt;svg width="315" height="390" viewBox="50 30 115 190"&gt;</h3></code></pre>
+                <p>The min values within the viewBox define the origin of the viewBox within the parent element; in other words,
+                  at what point within the viewBox do we want it to begin matching up the viewport. In the above examples the
+                  min values are set to 0,0 (top left). Let's change these to 50, 30. The viewBox (what will be visible) now
+                  starts 50px in from the x axis and 30px in from the y axis. In altering these values we have simply changed
+                  the section of the pear we want to focus on.
+                </p>
+  
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+  
+        <section class="bg-blue">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2>
+              After export, before implementation:
+            </h2>
+            <h1>Optimize!</h1>
+            <div class="column">
+              <img src="./static/images/svgomg.png" alt="svgomg">
+            </div>
+            <div class="column">
+              <ul class="flexblock metrics">
+                <li class="text-intro">
+                  <a href="https://jakearchibald.github.io/svgomg/">SVGOMG &nearr;</a>
+                </li>
+                <li class="text-intro">
+                  <a href="http://petercollingridge.appspot.com/svg-optimiser">Peter Collingridge's SVG Editor</a>
+                </li>
+                <li class="text-intro">
+                  <a href="https://www.npmjs.com/package/svgo">SVGO</a>
+                </li>
+              </ul>
+              <p>
+                <a href="https://www.sitepoint.com/three-ways-decreasing-svg-file-size-svgo/">https://www.sitepoint.com/three-ways-decreasing-svg-file-size-svgo/</a>
+              </p>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+    
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter size-70">
+              <h2>Introducing
+                <code>morphSVG</code> plugin
+              </h2>
+              <br/>
+              <p class="text-intro">One of the most exciting features of GreenSock is MorphSVG. It can even mutate shapes with uneven path points beautifully.</p>
+              </p>
+              <pre><code><h3 class="aligncenter">TweenMax.to("#pathFrom", 1, {morphSVG:"#pathTo"});
+              </h3></code></pre>
+              <p class="text-intro">To morph an SVG path to another, all you need to do is point from one ID to another --
+            </div>
+            <!-- .end .wrap -->
+          </section>
+    
+          <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <div class="grid vertical-align">
+    
+                <div class="column">
+                  <p data-height="500" data-theme-id="0" data-slug-hash="OPqpRJ" data-default-tab="result" data-user="GreenSock" data-embed-version="2"
+                    data-pen-title="Try Club GreenSock Bonus Plugins FREE on Codepen" class="codepen">See the Pen
+                    <a href="https://codepen.io/GreenSock/pen/OPqpRJ/">Try Club GreenSock Bonus Plugins FREE on Codepen</a> by GreenSock (
+                    <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
+                    <a href="https://codepen.io">CodePen</a>.</p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <!-- .end .column -->
+                <div class="column">
+                  <h4>
+                    Main Principle: Design everything first, unveil slowly.
+                  </h4>
+                  <p>Did you know? - Greensock's plugins are FREE within codepen</p>
+    
+                </div>
+                <!-- .end .column -->
+              </div>
+              <!-- .end .grid -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
+    
+          <section class="bg-blue">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 aligncenter">
+              <h2>
+                <strong>Intro to
+                  <code>{ morphSVG: "#" }</code>
+                </strong>
+              </h2>
+              <br />
+              <div class="bg-white shadow">
+                <ul class="flexblock reasons">
+                  <li>
+                    <h2>
+                      Create a new codepen
+                    </h2>
+                    <p class="text-intro">Include both Greensock library and morphSVG plugin</p>
+                  </li>
+                  <li>
+                    <h2>Grab 2 svg icons</h2>
+                    <p class="text-intro">Get the svg code for
+                      <a href="https://github.com/edent/SuperTinyIcons/tree/master/images/svg">amazon.svg</a>, click "Raw", then copy/paste the svg code into codepen. Do the same for apple.svg
+                    </p>
+                  </li>
+                  <li>
+                    <h2>Make an id name for each
+                      <code>&lt;path&gt;</code> </h2>
+                    <p class="text-intro">For example:
+                      <code>&lt;path id="amazon" ...</code>
+                    </p>
+                  </li>
+                  <li>
+                    <h2>Write the code</h2>
+                    <p class="text-intro">
+                      <code>TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- .end .bg-white shadow -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
+    
+    
+          <section class="bg-blue">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 aligncenter">
+              <div class="bg-white shadow">
+                <ol class="flexblock specs">
+                  <li>
+                    <h2>
+                      Let's add a 1.5 second delay
+                    </h2>
+                    <p class="text-intro">In your list of properties, add
+                      <code>{ ... , delay: 1.5}</code>
+                    </p>
+                  </li>
+                  <li>
+                    <h2>Hide the 2nd svg</h2>
+                    <p>create an id for the apple svg, then hide it in CSS section</p>
+                  </li>
+                  <li>
+                    <h2>Make an id name for each
+                      <code>&lt;path&gt;</code> </h2>
+                    <p class="text-intro">For example:
+                      <code>&lt;path id="amazon" ...</code>
+                    </p>
+                  </li>
+                  <li>
+                    <h2>Write the code</h2>
+                    <p class="text-intro">
+                      <code>TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code>
+                    </p>
+                  </li>
+                </ol>
+              </div>
+              <!-- .end .bg-white shadow -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
 
-        <div class="wrap">
+          <section class="bg-apple">
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap">
+                <div class="grid vertical-align">
+      
+                  <div class="column">
+                    <a href="https://blueprintinteractive.com/blog/creating-svg-download-button-gsap%E2%80%99s-morphsvgplugin">
+                      <img src="./static/images/download.gif" alt="download button" style="width: 400px">
+                    </a>
+                  </div>
+                  <!-- .end .column -->
+                  <div class="column">
+                    <h3>
+                      Let's make this download button using morphSVG
+                    </h3>
+                    <p class="text-intro">
+                      <a href="https://codepen.io/avcoder/pen/dmRqPe">https://codepen.io/avcoder/pen/dmRqPe</a>
+                    </p>
+      
+                  </div>
+                  <!-- .end .column -->
+                </div>
+                <!-- .end .grid -->
+              </div>
+              <!-- .end .wrap -->
+            </section>          
+    
+          <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">
+                Submit Online Exercise + Break
+                <br /> (5 mins) + (15mins)
+              </h2>
+              <p class="aligncenter">
+                <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
+              </p>
+              <p class="text-symbols">* * *</p>
+              <h4>More Stuff</h4>
+    
+              <ul>
+                <li>
+                  <a href="https://twitter.com/Junaidanwar3/status/976463201364783104">Chrome DevTools tip</a>
+                </li>
+                <li>
+                  <a href="https://icons8.com/lunacy">Lunacy - Sketch for Windows</a>
+                </li>
+                <li>
+                  <a href="https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/">https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+    
+    
 
-          <blockquote class="text-quote">
-            <p> I think it's good, but I still think that it's not as complex as Greensock's. It's a step in the right direction,
-              but there's also some things like eases, bounces, seeks, workflow boons that it doesn't include. Until it does,
-              it's still not as good.</p>
-            <p>
-              <cite>
-                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/1099384716170452992/Z_2ELEQp_400x400.jpg" alt="Avatar">Sarah Drasner.
-                <br/>
-                <a href="https://www.lynda.com/MyPlaylist/Watch/15095804/621334?autoplay=true">Advanced SVG Animation</a>
-              </cite>
-            </p>
-          </blockquote>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
+    
 
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -886,407 +1224,7 @@ TweenMax.to("#green", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease:
 
 
 
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter size-70">
-          <h2>Introducing
-            <code>morphSVG</code> plugin
-          </h2>
-          <br/>
-          <p class="text-intro">One of the most exciting features of GreenSock is MorphSVG. It can even mutate shapes with uneven path points beautifully.</p>
-          </p>
-          <pre><code><h3 class="aligncenter">TweenMax.to("#pathFrom", 1, {morphSVG:"#pathTo"});
-          </h3></code></pre>
-          <p class="text-intro">To morph an SVG path to another, all you need to do is point from one ID to another --
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="OPqpRJ" data-default-tab="result" data-user="GreenSock" data-embed-version="2"
-                data-pen-title="Try Club GreenSock Bonus Plugins FREE on Codepen" class="codepen">See the Pen
-                <a href="https://codepen.io/GreenSock/pen/OPqpRJ/">Try Club GreenSock Bonus Plugins FREE on Codepen</a> by GreenSock (
-                <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h4>
-                Main Principle: Design everything first, unveil slowly.
-              </h4>
-              <p>Did you know? - Greensock's plugins are FREE within codepen</p>
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="bg-blue">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <h2>
-            <strong>Intro to
-              <code>{ morphSVG: "#" }</code>
-            </strong>
-          </h2>
-          <br />
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <li>
-                <h2>
-                  Create a new codepen
-                </h2>
-                <p class="text-intro">Include both Greensock library and morphSVG plugin</p>
-              </li>
-              <li>
-                <h2>Grab 2 svg icons</h2>
-                <p class="text-intro">Get the svg code for
-                  <a href="https://github.com/edent/SuperTinyIcons/tree/master/images/svg">amazon.svg</a>, click "Raw", then copy/paste the svg code into codepen. Do the same for apple.svg
-                </p>
-              </li>
-              <li>
-                <h2>Make an id name for each
-                  <code>&lt;path&gt;</code> </h2>
-                <p class="text-intro">For example:
-                  <code>&lt;path id="amazon" ...</code>
-                </p>
-              </li>
-              <li>
-                <h2>Write the code</h2>
-                <p class="text-intro">
-                  <code>TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-      <section class="bg-blue">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <div class="bg-white shadow">
-            <ol class="flexblock specs">
-              <li>
-                <h2>
-                  Let's add a 1.5 second delay
-                </h2>
-                <p class="text-intro">In your list of properties, add
-                  <code>{ ... , delay: 1.5}</code>
-                </p>
-              </li>
-              <li>
-                <h2>Hide the 2nd svg</h2>
-                <p>create an id for the apple svg, then hide it in CSS section</p>
-              </li>
-              <li>
-                <h2>Make an id name for each
-                  <code>&lt;path&gt;</code> </h2>
-                <p class="text-intro">For example:
-                  <code>&lt;path id="amazon" ...</code>
-                </p>
-              </li>
-              <li>
-                <h2>Write the code</h2>
-                <p class="text-intro">
-                  <code>TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code>
-                </p>
-              </li>
-            </ol>
-          </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="bg-secondary">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 frame">
-          <h2 class="text-serif aligncenter">
-            Submit Online Exercise + Break
-            <br /> (5 mins) + (15mins)
-          </h2>
-          <p class="aligncenter">
-            <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
-          </p>
-          <p class="text-symbols">* * *</p>
-          <h4>More Stuff</h4>
-
-          <ul>
-            <li>
-              <a href="https://twitter.com/Junaidanwar3/status/976463201364783104">Chrome DevTools tip</a>
-            </li>
-            <li>
-              <a href="https://icons8.com/lunacy">Lunacy - Sketch for Windows</a>
-            </li>
-            <li>
-              <a href="https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/">https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="WzOeoX" data-default-tab="result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="viewbox" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/WzOeoX/">viewbox</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h1>
-                Matching Dimensions
-              </h1>
-              <pre><code><h3>
-&lt;svg width="115" height="190" viewBox="0 0 115 190"&gt;</h3></code></pre>
-              <p>Within this first example the viewport and viewBox are set to matching values, with a width of 115px and a
-                height of 190px. The viewBox is set to cover the entire pear image, and that image is set to fill the bounds
-                of its container.</p>
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="oqwvMx" data-default-tab="result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="reduced viewbox" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/oqwvMx/">reduced viewbox</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h1>
-                Reduced viewBox
-              </h1>
-              <pre><code><h3>
-&lt;svg width="115" height="190" viewBox="0 0 65 140"&gt;</h3></code></pre>
-              <p>If we were to take 50px off the width and height of the pear image viewBox, we are reducing the size of what
-                portion of the pear we want visible, but then what is left visible will scale to fit to the bounds of the
-                viewport.
-              </p>
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="bg-blue">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter">
-          <h1>Viewbox</h1>
-          <img src="./static/images/viewboxtool.png" alt="viewbox tool by sarasoueidan.com" style="margin-right: 40px;">
-          <!-- .end .bg-white shadow -->
-          <p class="text-intro">
-            <a href="http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html">http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html</a>
-          </p>
-        </div>
-
-
-        <!-- .end .wrap -->
-      </section>
-
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="zWzxvE" data-default-tab="result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="expanded viewport" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/zWzxvE/">expanded viewport</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h1>
-                Expanding viewPort
-              </h1>
-              <pre><code><h3>
-&lt;svg width="315" height="390" viewBox="0 0 115 190"&gt;</h3></code></pre>
-              <p>Starting from our original example, let's add an additional 200px to both the width and height of the viewport.
-                The image will scale up to match these dimensions. The viewBox is set to cover the entire image, making the
-                whole pear visible. The viewport contains this whole image and defines the bounds to which the whole pear
-                will fill.
-              </p>
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="LdLEbB" data-default-tab="result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="altering min values" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/LdLEbB/">altering min values</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h1>
-                Altering min values
-              </h1>
-              <pre><code><h3>
-&lt;svg width="315" height="390" viewBox="50 30 115 190"&gt;</h3></code></pre>
-              <p>The min values within the viewBox define the origin of the viewBox within the parent element; in other words,
-                at what point within the viewBox do we want it to begin matching up the viewport. In the above examples the
-                min values are set to 0,0 (top left). Let's change these to 50, 30. The viewBox (what will be visible) now
-                starts 50px in from the x axis and 30px in from the y axis. In altering these values we have simply changed
-                the section of the pear we want to focus on.
-              </p>
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="bg-blue">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <h2>
-            After export, before implementation:
-          </h2>
-          <h1>Optimize!</h1>
-          <div class="column">
-            <img src="./static/images/svgomg.png" alt="svgomg">
-          </div>
-          <div class="column">
-            <ul class="flexblock metrics">
-              <li class="text-intro">
-                <a href="https://jakearchibald.github.io/svgomg/">SVGOMG &nearr;</a>
-              </li>
-              <li class="text-intro">
-                <a href="http://petercollingridge.appspot.com/svg-optimiser">Peter Collingridge's SVG Editor</a>
-              </li>
-              <li class="text-intro">
-                <a href="https://www.npmjs.com/package/svgo">SVGO</a>
-              </li>
-            </ul>
-            <p>
-              <a href="https://www.sitepoint.com/three-ways-decreasing-svg-file-size-svgo/">https://www.sitepoint.com/three-ways-decreasing-svg-file-size-svgo/</a>
-            </p>
-          </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="bg-apple">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-
-            <div class="column">
-              <a href="https://blueprintinteractive.com/blog/creating-svg-download-button-gsap%E2%80%99s-morphsvgplugin">
-                <img src="./static/images/download.gif" alt="download button" style="width: 400px">
-              </a>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h3>
-                Let's make this download button using morphSVG
-              </h3>
-              <p class="text-intro">
-                <a href="https://codepen.io/avcoder/pen/dmRqPe">https://codepen.io/avcoder/pen/dmRqPe</a>
-              </p>
-
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <h2>
-            <strong>Summary:</strong>
-          </h2>
-          <br />
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <li>
-                We learned a new level of animation using jQuery tools like animate(), 3rd-party easing/timing, and callback functions.We
-                also learned how to trigger other events once an animation is complete, and to stop all animations currently
-                in progress.
-              </li>
-              <li>
-                We applied our basic knowledge of Greensock to create an animated banner ad.
-              </li>
-              <li>
-                Next, we will investigate about SVG**, GSAP's DrawSVG and MorphSVG
-              </li>
-            </ul>
-          </div>
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
       <section class="bg-secondary">
         <!--.wrap = container (width: 90%) -->
