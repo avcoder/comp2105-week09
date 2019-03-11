@@ -766,22 +766,22 @@ tl3.to("#green", 1, {x: 600})
 
             <div class="column">
               <div style="background: #333; padding: 33px">
-                <div id="green5" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
-                <div id="blue5" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
-                <div id="orange5" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+                <div id="green15" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                <div id="blue15" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                <div id="orange15" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
               </div>
-              <button id="go5">Run</button>
+              <button id="go15">Run</button>
               <input type="range">
               <input type="range">
               <input type="range">
               <script>
                 $(document).ready(function () {
-                  $('#go5').click(function () {
+                  $('#go15').click(function () {
                     const tl5 = new TimelineMax();
                     tl5
-                      .to("#green5", 1, { x: 600 }, "myLabel")
-                      .to("#blue5", 1, { x: 600 })
-                      .to("#orange5", 1, { x: 600 }, "myLabel+=0.5");
+                      .to("#green15", 1, { x: 600 }, "myLabel")
+                      .to("#blue15", 1, { x: 600 })
+                      .to("#orange15", 1, { x: 600 }, "myLabel+=0.5");
                   });
                 });
               </script>

@@ -168,3 +168,19 @@
 - [click run]
 
 # Use position to set a label, OR specify where a tween should be placed
+
+- we covered this last week using tl.add("myLabel")
+- but we can also use position parameter to set our custom label
+- so the green square adds a "mylabel"
+- the 3rd square animates 0.5s after the 1st one
+
+# Codepen: GSAP position
+
+- your turn
+- here's an example from Greensock's webpage
+- here's how the animation looks like so far
+- as you can see, the animation is not quite in sync
+- [click codepen]
+- your challenge (5 mins) is to
+- read it
+- here's a gif link of how it should look like [click gif]
