@@ -910,8 +910,8 @@ tl3.to("#green", 1, {x: 600})
 
                   $('#go12b').click(function () {
                     const tl2b = new TimelineMax();
-                    tl2b.to("#green12", 1, { x: 600 }).to("#blue12", 1, { x: 600 }).to("#orange12", 1, { x: 600 })
-                    
+                    tl2b.to("#green12", 1, { x: 600 }).to("#blue12", 1, { x: 600 }).to("#orange12", 1, { x: 600 });
+                    tl2b.timeScale(2);
                   });
                 });
 

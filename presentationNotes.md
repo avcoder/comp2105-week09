@@ -155,6 +155,7 @@
 - Q: what do you expect will happen here?
 - the green square will run 1s
 - the blue square will normally go here, but because it has -=.5, before the first square's animation ends, this one starts
+- most of the time you'll be using -=
 
 # Use position as an absolute value
 
@@ -166,6 +167,7 @@
 - 2.5 occurs here
 - so that's the animation I would expect
 - [click run]
+- absolute values are good if your syncing to music
 
 # Use position to set a label, OR specify where a tween should be placed
 
@@ -184,3 +186,22 @@
 - your challenge (5 mins) is to
 - read it
 - here's a gif link of how it should look like [click gif]
+- try the different ways to use position parameter
+- Q: Anyone complete this in a different way?
+- also notice the restart button uses a .restart() method
+
+# .fromTo()
+
+- as you would expect
+- you are entering 2 "vars" the from and the to
+- so here's the code for this square
+- Q: what would you expect?
+- where is x:500? x:200?
+- so if I click run, I would expect the square to start from here then move to the middle
+
+# .timeScale()
+
+- another feature that web devs love about greensock is this -- timescale
+- let's say you finish your animation and you're happy with it
+- but maybe your boss says let's make that quicker by .2s
+- what you could do is `.timeScale(2)`
