@@ -206,12 +206,11 @@
                 <h1>
                   Matching Dimensions
                 </h1>
-                <pre><code><h3>
-  &lt;svg width="115" height="190" viewBox="0 0 115 190"&gt;</h3></code></pre>
+                <pre><code><h4>&lt;svg width="115px" height="190px" viewBox="0 0 115 190"&gt;</h4></code></pre>
                 <p>Within this first example the viewport and viewBox are set to matching values, with a width of 115px and a
                   height of 190px. The viewBox is set to cover the entire pear image, and that image is set to fill the bounds
                   of its container.</p>
-  
+  <p><a href="https://codepen.io/avcoder/pen/Lajvmo?editors=1100">Other codepen example: Square, star etc</a></p>
               </div>
               <!-- .end .column -->
             </div>
@@ -238,13 +237,12 @@
                 <h1>
                   Reduced viewBox
                 </h1>
-                <pre><code><h3>
-  &lt;svg width="115" height="190" viewBox="0 0 65 140"&gt;</h3></code></pre>
+                <pre><code><h4>&lt;svg width="115px" height="190px" viewBox="0 0 65 140"&gt;</h4></code></pre>
                 <p>If we were to take 50px off the width and height of the pear image viewBox, we are reducing the size of what
                   portion of the pear we want visible, but then what is left visible will scale to fit to the bounds of the
                   viewport.
                 </p>
-  
+                <p><a href="https://codepen.io/avcoder/pen/Lajvmo?editors=1100">Other codepen example: Square, star etc</a></p>
               </div>
               <!-- .end .column -->
             </div>
@@ -257,9 +255,9 @@
           <!--.wrap = container (width: 90%) -->
           <div class="wrap aligncenter">
             <h1>Viewbox</h1>
-            <a href="http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html">
+          <p><a href="http://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html">Sara Soueidan's demo</a></p>  
             <img src="./static/images/viewboxtool.png" alt="viewbox tool by sarasoueidan.com" style="margin-right: 40px;">
-          </a>
+          
             <!-- .end .bg-white shadow -->
           </div>
   
@@ -286,8 +284,8 @@
                 <h1>
                   Expanding viewPort
                 </h1>
-                <pre><code><h3>
-  &lt;svg width="315" height="390" viewBox="0 0 115 190"&gt;</h3></code></pre>
+                <pre><code><h4>
+  &lt;svg width="315px" height="390px" viewBox="0 0 115 190"&gt;</h4></code></pre>
                 <p>Starting from our original example, let's add an additional 200px to both the width and height of the viewport.
                   The image will scale up to match these dimensions. The viewBox is set to cover the entire image, making the
                   whole pear visible. The viewport contains this whole image and defines the bounds to which the whole pear
@@ -321,8 +319,8 @@
                 <h1>
                   Altering min values
                 </h1>
-                <pre><code><h3>
-  &lt;svg width="315" height="390" viewBox="50 30 115 190"&gt;</h3></code></pre>
+                <pre><code><h4>
+  &lt;svg width="315px" height="390px" viewBox="50 30 115 190"&gt;</h4></code></pre>
                 <p>The min values within the viewBox define the origin of the viewBox within the parent element; in other words,
                   at what point within the viewBox do we want it to begin matching up the viewport. In the above examples the
                   min values are set to 0,0 (top left). Let's change these to 50, 30. The viewBox (what will be visible) now
