@@ -86,5 +86,36 @@
    - copy morphSVG path and paste it into codepen's JS - so now your codepen has both libraries
 
 2. grab 2 svg icons (after we try this out you can experiment with your own SVGs later)
+
    - so here's the amazon icon where someone has created some svg icons for the different brands
-   - click Raw
+   - click Raw copy/paste it into codepen
+   - so that's the 1st svg
+   - let's grab the apple icon now and do the same
+   - so that's the 2nd svg
+
+3. make an id name for each path
+
+   - Q: why paths only and not rect etc.?
+   - A: because morphSVG only works on paths
+   - Q: what if I don't have paths but only rect star etc
+   - A: use morphSVGPlugin.convertToPath() https://greensock.com/morphSVG
+
+4. Add `TweenMax.to("#amazon", 1, { morphSVG: "#apple"})`
+
+   - cool eh?
+
+5. add a 1.5 delay
+
+   - `{..., delay: 1.5}`
+
+6. hide 2nd logo
+
+   - `#applelogo { display: none; }`
+
+7. Change colour
+
+- Have to target rect to change colour
+  ```js
+  TweenMax.to("#amazon", 1, { morphSVG: "#apple", delay: 1.5 });
+  TweenMax.to("#amazonlogo rect", 1, { attr: { fill: "#555" }, delay: 1.5 });
+  ```
