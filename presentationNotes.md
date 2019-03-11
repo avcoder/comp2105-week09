@@ -119,3 +119,52 @@
   TweenMax.to("#amazon", 1, { morphSVG: "#apple", delay: 1.5 });
   TweenMax.to("#amazonlogo rect", 1, { attr: { fill: "#555" }, delay: 1.5 });
   ```
+
+# GSAP Review
+
+- so last week you learned the .to, .from, .set
+- so here we have a timeline
+- Q: What do you expect would happen if I click this Run button?
+- the essential code is here; the green refers to green box etc.
+- since we're using a .to, everything listed here is the end destination
+- 0% is where it's at; 100% is where it's going
+- use sliders: because we're using a timeline, the 2nd statement will occur after 1st statement
+- it should move green box 1s to the right
+- followed by that, blue square, then orange square
+
+# Introducing the position parameter
+
+- so in addition to your target, duration, props, you now also have the allowance to put a position parameter
+- and this is the secret to make beautiful sequences with precise timing - use of position parameter
+- read top/bottom
+
+# Use of position to allow for gaps +=1
+
+- there are a handful of ways you can use position paramter; last week I showed you how to add/use a label
+- here i'm using a position parameter of +=1
+- it'll insert 1 second between 1st and 2nd one
+- before I click run, the green square will run 1s
+- normally this blue square would run after it, but since it has +=1, it'll wait 1s
+- so in reality (use slider) blue square starts here instead
+- similar to the last square
+- so I would expect when I click run that it would run like this
+- [click run]
+
+# Use position to allow for overlaps -=1
+
+- Q: what do you expect will happen here?
+- the green square will run 1s
+- the blue square will normally go here, but because it has -=.5, before the first square's animation ends, this one starts
+
+# Use position as an absolute value
+
+- read it
+- here I specified 2 and 2.5
+- so the first one has no position parameter
+- The 2nd one would normally occur here
+- now remember it starts at 0
+- 2.5 occurs here
+- so that's the animation I would expect
+- [click run]
+
+# Use position to set a label, OR specify where a tween should be placed
