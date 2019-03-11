@@ -205,3 +205,70 @@
 - let's say you finish your animation and you're happy with it
 - but maybe your boss says let's make that quicker by .2s
 - what you could do is `.timeScale(2)`
+- [click run] = 3 normal seconds
+- [click 2x] should happen 2x as fast
+- doesn't matter if you place above, or join it by saying .to .to .to .timeScale
+
+# yoyo / repeat
+
+- yoyo is just a true/false value where if it's true the animation will keep going back/forth
+- read it
+- similar to props back in @keyframe animation animation-iteration is like repeat.
+- if repeat 0, then this yoyo means nothing
+- if repeat 1, then the going back is the 1
+- if want infinity, it's -1
+
+# passing options when constructing new timelines
+
+- let's say you have all these .to and .from on the timeline
+- let's say they all have the same props like yoyo:true and repeat: -1
+- so instead of putting those props in each of the statement's vars, you can
+- pass it in the constructor
+- notice the link where you can view a variety of options, let's see that
+- [click link]
+- so here's the repeat we just did, and here's the yoyo
+- so take a minute and read thru some of the various options
+
+# repeatDelay
+
+- in addition to yoyo/repeat
+- let's say you want a delay as well
+- read it
+- so here we have almost the exact animation, only difference is the repeatDelay of 1s
+- Q: what would you expect?
+- the square will move, but before it moves back (i.e. repeat), it will wait 1s
+- [click run]
+- and it'll do that infinitely
+- so that's what repeatDelay does
+
+# .play() .pause()
+
+- notice in this code I'm also using jQuery, GSAP works well with jQuery too
+- so the code says this square will go back forth infinitely
+- but notice I say in the constructor paused: true, so that animation doesn't move until it's commanded to play
+- [click play]
+- [click pause]
+- also remember the .restart() that you saw for the car mechanic lift codepen exercise
+
+# autoAlpha
+
+- we touched upon last week
+- almost identical to opacity
+- only difference is, autoAlpha when it hits the 0 value, the visibility prop will be set to hidden
+- reason: improve performance and to prevent clicks / interactivity
+- I've coded this webpage to respond to click events for each square
+- [click top square]
+- [click opacity square]
+- when I click on run, both will fade out, but top one -- visibility will be set to hidden which means if I try to click it it shouldn't respond
+- whereas the bottom square should still respond even if invisible
+
+# attr
+
+- we touched upon this last week
+- read it
+- keep in mind this square is made via SVG, not regular DOM elements like the previous examples which means we have svg attributes like fill
+- Q: now you might be thinking wait a minute that's kind of like css transform: translateX which should be just x in GSAP right?
+- A: No. because in svg you have attributes which is may not match any css values
+- so we can access attributes for example in SVGs by using attr
+- Q: why is the square halved?
+- A: svg viewbox

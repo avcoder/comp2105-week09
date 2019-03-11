@@ -1199,7 +1199,7 @@ tl
               <script>
                 $(document).ready(function () {
                   $('#go9').click(function () {
-                    TweenMax.to("#green9", 1, { attr: { fill: "orange" }, ease: Linear.easeNone });
+                    TweenMax.to("#green9", 1, { attr: { fill: "orange", x: 200 }, ease: Linear.easeNone });
                   });
                 });
               </script>
@@ -1214,7 +1214,7 @@ tl
               <pre><code><h5>
 &lt;rect id="green" x="0" y="0" fill="green" stroke="black" width="150" height="150" /&gt;
 
-TweenMax.to("#green9", 1, { attr: { fill: "orange" }, ease: Linear.easeNone });
+TweenMax.to("#green9", 1, { attr: { fill: "orange", x: 200 }, ease: Linear.easeNone });
             </h5></code></pre>
 
             </div>
