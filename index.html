@@ -1170,8 +1170,9 @@ tl
 
             <div class="column">
               <div style="background: #333; padding: 33px">
-                <svg x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150">
-                  <rect id="green9" x="0" y="0" fill="green" stroke="black" width="150" height="150" />
+                <style scoped>#thissvg {height: 100px; width: 100px;}</style>
+                <svg id="thissvg" viewBox="0 0 300 300">
+                  <rect id="green9" x="0" y="0" fill="green" stroke="black" width="250" height="250" />
                 </svg>
 
               </div>
@@ -1179,7 +1180,7 @@ tl
               <script>
                 $(document).ready(function () {
                   $('#go9').click(function () {
-                    TweenMax.to("#green9", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease: Linear.easeNone });
+                    TweenMax.to("#green9", 1, { attr: { fill: "orange" }, ease: Linear.easeNone });
                   });
                 });
               </script>
@@ -1194,7 +1195,7 @@ tl
               <pre><code><h5>
 &lt;rect id="green" x="0" y="0" fill="green" stroke="black" width="150" height="150" /&gt;
 
-TweenMax.to("#green", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease: Linear.easeNone });
+TweenMax.to("#green9", 1, { attr: { fill: "orange" }, ease: Linear.easeNone });
             </h5></code></pre>
 
             </div>
@@ -1215,7 +1216,7 @@ TweenMax.to("#green", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease:
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-50 frame">
           <h2 class="text-serif aligncenter">
-            Do in-class Exercise 13
+            Do Lab 9
             <br/>until end of class
           </h2>
           <p class="aligncenter">
@@ -1226,13 +1227,13 @@ TweenMax.to("#green", 1, { attr: { x: 100, y: 50, width: 80, height: 50 }, ease:
 
           <ul>
             <li>
-              <a href="https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2">https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2</a>
+              <a href="https://devfreebooks.github.io/">Free coding/webdev books</a>
             </li>
             <li>
-              <a href="https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development">https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development</a>
+              <a href="https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9">Proper use of animation</a>
             </li>
             <li>
-              <a href="http://thenewcode.com/858/Web-Development-Reading-List-Accessibility">http://thenewcode.com/858/Web-Development-Reading-List-Accessibility</a>
+              <a href="https://valhead.com/ui-animation/">Val Head's list of animation resources</a>
             </li>
           </ul>
         </div>
