@@ -60,12 +60,31 @@
 
 - this is one of those things where when I first saw it, it blew me away
 - so I will let you experience what I experienced
-- instead of me putting a codepen with code already there, I'll let you build it from scratch
+- so instead of me putting a codepen with code already there, I'll let you build it from scratch - it'll be better as a learning perspective
 - One of the more exciting features that Greensock has is something called morphSVG
-- it mutates shapes beautifully which you saw in last week's Star Wars animation
+- it mutates shapes beautifully which you saw in last week's Star Wars animation when it changed all those faces
 - the syntax is like this, just put it as one of the properties
 - 1st id is your first svg path, 2nd id is your svg path - it has to be a path
+- read it
 
 # GSAP plugins codepen
 
--
+- What's cool about morphSVG is that Greensock has a partnership with codepen in that you can tryout their usually paid plugins, for FREE on codepen only
+- not only morphSVG but all their other paid plugins, so you can play with this as much as you like
+- so let's copy morphSVG library and create a codepen
+- read it
+
+# Intro to { morphSVG: "#" }
+
+- okay so here are the different steps 1 thru 8
+- I'm asking you to create a new codepen from scratch and play with morphSVG
+
+1. so go into your codepen, include TweenMax and morphSVG plugin
+
+   - let's click on gear icon, search for TweenMax, codepen adds it
+   - unforunately if you search for morphSVG it won't find it and that's the purpose of the previous slide
+   - copy morphSVG path and paste it into codepen's JS - so now your codepen has both libraries
+
+2. grab 2 svg icons (after we try this out you can experiment with your own SVGs later)
+   - so here's the amazon icon where someone has created some svg icons for the different brands
+   - click Raw
