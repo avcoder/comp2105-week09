@@ -29,11 +29,32 @@
 - so let's see what happens if we change the values the other way
 - compared to the 1st example, we're leaving the viewbox values as is
 - but this time we're going to expand the view port (originally we had values that were less than this)
--
 
 # Altering min values
 
+- before we had 0 0 for the viewBox but now it's 50 30
+- so the viewbox starts from a different position other than 0 0
+- analogy: viewbox is like a window of a house
+- analogy: sprite image - which part to focus on?
+
+# preserveAspectRatio
+
+- 9/10 you'll hardly ever need to change the default `xMidYMid meet`
+- experiment different values with https://codepen.io/avcoder/pen/Lajvmo
+- for `preserveAspectRatio: none` click on last image to get to https://webanimationworkshops.com (Inspect triangle)
+
 # optimize SVGOMG
+
+- according to Sarah Drasner, she always uses SVGOMG tool to optimize her SVGs - best workflow
+- Adobe Illustrator save it as an SVG
+- before I click on SVGOMG, click link [Sitepoint] where it gives 3 ways to optimize SVG
+- here's sitepoint's instance where you have generated code where you have a lot of junk
+- but in reality all you really need is the bare minimum
+- similar to if you were to save a Word document as an html page
+- try opening up cat.svg (from undraw.co/illustrations) and then toggle "Show original" to see % optimized
+- toggle prettify markup
+- so your in-class exercise today, I've asked you to use this optimizer
+- the other 2 tools for optimization are a little older (3rd one is text based and uses node)
 
 # Introducing morphSVG plugin
 
